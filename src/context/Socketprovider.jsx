@@ -10,7 +10,7 @@ export const useSocket = () => {
 };
 
 export const SocketProvider = (props) => {
-  const socket = useMemo(() => io("http://localhost:8000"), []);
+  const socket = useMemo(() => io("https://p2p-backend-hloy.onrender.com/"), []);
 
   return (
     <SocketContext.Provider value={socket}>
